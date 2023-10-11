@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout by Fred</title>
+    <style>
+
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: aliceblue;
+        }
+
+        .container{
+            display: grid;
+            height: 70vh;
+            grid-template-rows: auto auto 200px;
+            grid-template-columns: repeat(2, auto);
+            gap: 10px;
+            text-align: justify;
+            width: 80%;
+        }
+
+        .item{
+        
+        
+        }
+
+        h1, h2, h3, h4, h5{
+            text-align: center;
+        }
+
+        p {
+            padding: 10px;
+        }
+
+        li{
+            text-align: center;
+            list-style: none;
+        }
+
+        img{
+            height: 200px;
+            width: 200px;
+            float: left;
+            margin-right: 20px;
+        }
+
+        .about{
+            background-color: #610C9F;
+        }
+
+        .education{
+            background-color: #940B92;
+            grid-row: span 2;
+        }
+
+        .achievement{
+            background-color: #610C9F;
+        }
+
+        .curri{
+            background-color: #DA0C81;
+            grid-row: 3;
+        }
+
+        .next{
+            background-color: #E95793;
+            grid-row: 3;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="item about">
+            <img src="agba.png">
+            <h5>About</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis diam sed nulla ultricies, 
+                nec lacinia sapien finibus. Suspendisse arcu nunc, aliquet et sapien vitae, bibendum elementum dui.
+                Phasellus nec viverra velit, vel pharetra metus. Nunc nec dapibus felis, nec accumsan nisi.
+                Suspendisse viverra sit amet nunc nec venenatis. Etiam euismod vehicula metus, a semper nibh dictum quis.
+                Sed sed nisl quis sapien aliquet placerat. Nam molestie quis dui sed accumsan. Duis sed nunc tristique,
+                tristique ex sit amet, varius ex. Sed in mi quis augue viverra ultrices. Etiam ornare odio sem, a pellentesque
+                leo tincidunt vitae. Nulla consectetur, mi quis maximus posuere, sapien neque bibendum mauris, sit amet fermentum
+                dolor elit eget nisl. Donec feugiat, lorem sed cursus euismod, orci quam ultricies ligula, eu vestibulum metus nisl sed nunc.</p>
+        </div>
+        <div class="item education">
+            <h4>Education</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis diam sed nulla ultricies, 
+                nec lacinia sapien finibus. Suspendisse arcu nunc, aliquet et sapien vitae, bibendum elementum dui.
+                Phasellus nec viverra velit, vel pharetra metus. Nunc nec dapibus felis, nec accumsan nisi.
+                Suspendisse viverra sit amet nunc nec venenatis. Etiam euismod vehicula metus, a semper nibh dictum quis.
+                Sed sed nisl quis sapien aliquet placerat. Nam molestie quis dui sed accumsan. Duis sed nunc tristique,
+                tristique ex sit amet, varius ex. Sed in mi quis augue viverra ultrices. Etiam ornare odio sem, a pellentesque
+                leo tincidunt vitae. Nulla consectetur, mi quis maximus posuere, sapien neque bibendum mauris, sit amet fermentum
+                dolor elit eget nisl. Donec feugiat, lorem sed cursus euismod, orci quam ultricies ligula, eu vestibulum metus nisl sed nunc. Mauris consequat lectus vel condimentum consequat. Praesent blandit eu ante nec cursus. In elementum, diam quis gravida suscipit,
+                elit diam scelerisque dui, vitae faucibus sapien odio et leo. Cras aliquam varius neque porta volutpat.
+                Sed mattis urna non velit fringilla tincidunt vitae at metus. In id pharetra massa. Pellentesque varius nibh
+                eget metus tincidunt commodo. Sed mattis lectus nisi, id pellentesque mi vestibulum id. Duis nec ligula felis.
+                
+                Morbi nibh augue, eleifend nec nibh in, mattis porttitor velit. In pellentesque metus ut lacus pulvinar fringilla.
+                Nam vel auctor nunc. In imperdiet elementum nisl, sit amet posuere nulla volutpat sit amet. Nullam et euismod orci.
+                Quisque finibus purus quis tristique laoreet. Curabitur malesuada quis quam commodo sagittis. Morbi vel risus eu neque
+                dignissim imperdiet et eget mauris. Nullam et ex magna. Donec semper metus a tellus pharetra elementum. Donec mattis nibh nec ultrices pulvinar. Sed aliquam arcu vel velit hendrerit suscipit. Mauris consectetur
+                euismod augue at interdum. Donec sapien felis, viverra vitae faucibus in, molestie ut est. Nulla sit amet mi diam.
+                Proin ac erat libero. In id erat nunc. Suspendisse viverra maximus mauris, posuere commodo enim pellentesque a.
+                Vivamus luctus tristique sapien, nec feugiat ante molestie quis. Sed imperdiet velit a viverra dictum.
+                </p>
+        </div>
+        <div class="item achievement">
+            <h3>Achievement</h3>
+            <ul>
+                <li>- Mauris consequat lectus vel condimentum consequat.</li>
+                <li>- Mauris consequat lectus vel condimentum consequat.</li>
+                <li>- Mauris consequat lectus vel condimentum consequat.</li>
+                <li>- Mauris consequat lectus vel condimentum consequat.</li>
+                <li>- Mauris consequat lectus vel condimentum consequat.</li>
+                <li>- Mauris consequat lectus vel condimentum consequat.</li>
+                <li>- Mauris consequat lectus vel condimentum consequat.</li>
+                <li>- Mauris consequat lectus vel condimentum consequat.</li>
+                <li>- Mauris consequat lectus vel condimentum consequat.</li>
+            </ul>
+        </div>
+        <div class="item"></div>
+        <div class="item curri">
+            <h2>Extracurricular</h2>
+            <ul>
+                <li>- Mauris consequat lectus vel condimentum consequat.</li>
+                <li>- Mauris consequat lectus vel condimentum consequat.</li>
+                <li>- Mauris consequat lectus vel condimentum consequat.</li>
+                <li>- Mauris consequat lectus vel condimentum consequat.</li>
+            </ul>
+
+        </div>
+        <div class="item next">
+            <h1>What Next?</h1>
+            <ul>
+                <li>- Mauris consequat lectus vel condimentum consequat.</li>
+                <li>- Mauris consequat lectus vel condimentum consequat.</li>
+                <li>- Mauris consequat lectus vel condimentum consequat.</li>
+                <li>- Mauris consequat lectus vel condimentum consequat.</li>
+            </ul>
+        </div>
+
+    </div>
+    
+</body>
+</html>
